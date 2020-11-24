@@ -203,20 +203,20 @@ namespace JogoDaVelha
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel GamePanel;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_PlayAgain;
         private System.Windows.Forms.Button btn_Exit;
         public System.Windows.Forms.Label LabelNomeX;
         public System.Windows.Forms.Label LabelNomeO;
         public System.Windows.Forms.Label Label_Information;
+        public System.Windows.Forms.Button button7;
+        public System.Windows.Forms.Button button8;
+        public System.Windows.Forms.Button button9;
+        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button button1;
     }
 }
 

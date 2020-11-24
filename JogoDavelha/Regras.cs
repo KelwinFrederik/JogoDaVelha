@@ -27,13 +27,59 @@ namespace JogoDaVelha
             IsGameRuning = true;
         }
 
-        public static void WinnerGame(List<Button> buttons) 
+        public static void WinnerGame(Form1 form)
         {
+            string winner = "", loser = "";
+            string whowinner, wholoser;
+
+            //TODO MAIS PROXIMO WINNER
+/*
+            List<string[,]> btn = new List<string[,]>();
+            string[,] btnstring = new string[8, 3]{
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text}
+            };
+
+            btn.Add(new string[8,3]{ 
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text},
+                {form.button1.Text, form.button6.Text, form.button9.Text}
+            }); 
+*/           
+            
+            //{form.button1.Text, form.button6.Text, form.button9.Text });
+
+            //List<string> []btn = [[form.button1.Text, form.button6.Text, form.button9.Text]
+
+            //string[] Btn_Winner = new string[3];
+
+            /*
+             * , {"","","" }, { "", "", "" }, { "", "", "" }, { "", "", "" }, { "", "", "" }, { "", "", "" }, { "", "", "" } );
+            List<string>[] buttonsWinner = new List<string>[3]; {[form.button1.Text, form.button6.Text, form.button9.Text] };
+            buttonsWinner.
+
+            buttonsWinner [form.button1.Text, form.button6.Text, form.button9.Text];
+            */
+
+
             //TODO Comparação para decidir vencedor;
 
 
             if (Winner)
                 GameOver();
+
+            form.Label_Information.Text = $"PARABENS !! {winner} VENCEU A PARTIDA!! {loser} TENTE NOVAMENTE!!";
         }
 
         public static void HashGame(int count,Form1 form) 

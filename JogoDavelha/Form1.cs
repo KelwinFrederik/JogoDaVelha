@@ -13,11 +13,10 @@ namespace JogoDaVelha
     public partial class Form1 : Form
     {
         int countCLicks;
-        List<Button> btns;
 
         public Form1()
         {
-            SetListButtons();
+
             InitializeComponent();
             countCLicks = 0;
             Regras.NewGame();
@@ -40,16 +39,10 @@ namespace JogoDaVelha
             if(countCLicks < 9 && Regras.IsGameRuning)
                 countCLicks = Regras.setLetters(sender, countCLicks);
             
-            Regras.WinnerGame(btns);
+            Regras.WinnerGame(this);
 
             if(countCLicks > 8 && !Regras.Winner)
                 Regras.HashGame(countCLicks,this);
-        }
-
-        private void SetListButtons()
-        {
-            btns = new List<Button>();
-            //btns.Add(this.Controls.Find());
         }
     }
 }
