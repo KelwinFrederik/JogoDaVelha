@@ -30,7 +30,12 @@ namespace JogoDaVelha
 
         private void btn_PlayAgain_Click(object sender, EventArgs e)
         {
-            new Form2().ShowDialog();
+            Form2 form2 = new Form2();
+
+            form2.Tb_NameX.Text = LabelNomeX.Text;
+            form2.Tb_NameO.Text = LabelNomeO.Text;
+
+            form2.ShowDialog();
             this.Close();
         }
 

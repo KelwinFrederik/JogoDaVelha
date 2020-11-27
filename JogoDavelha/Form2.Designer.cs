@@ -104,7 +104,7 @@ namespace JogoDaVelha
         private System.Windows.Forms.Button btn_PlayGame;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Tb_NameX;
-        private System.Windows.Forms.TextBox Tb_NameO;
+        public System.Windows.Forms.TextBox Tb_NameX;
+        public System.Windows.Forms.TextBox Tb_NameO;
     }
 }
