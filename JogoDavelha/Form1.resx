@@ -781,7 +781,8 @@
     <value>9</value>
   </data>
   <data name="Label_Information.Text" xml:space="preserve">
-    <value>By.: Kelwin F. Alves</value>
+    <value>jogador X inicirá o jogo.
+By.: Kelwin F. Alves</value>
   </data>
   <data name="Label_Information.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
