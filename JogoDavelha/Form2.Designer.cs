@@ -42,7 +42,7 @@ namespace JogoDaVelha
             this.btn_PlayGame.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_PlayGame.Location = new System.Drawing.Point(16, 90);
             this.btn_PlayGame.Name = "btn_PlayGame";
-            this.btn_PlayGame.Size = new System.Drawing.Size(135, 23);
+            this.btn_PlayGame.Size = new System.Drawing.Size(159, 23);
             this.btn_PlayGame.TabIndex = 0;
             this.btn_PlayGame.Text = "PLAY GAME";
             this.btn_PlayGame.UseVisualStyleBackColor = true;
@@ -70,22 +70,22 @@ namespace JogoDaVelha
             // 
             this.Tb_NameX.Location = new System.Drawing.Point(157, 20);
             this.Tb_NameX.Name = "Tb_NameX";
-            this.Tb_NameX.Size = new System.Drawing.Size(214, 20);
+            this.Tb_NameX.Size = new System.Drawing.Size(111, 20);
             this.Tb_NameX.TabIndex = 3;
             // 
             // Tb_NameO
             // 
             this.Tb_NameO.Location = new System.Drawing.Point(157, 56);
             this.Tb_NameO.Name = "Tb_NameO";
-            this.Tb_NameO.Size = new System.Drawing.Size(214, 20);
+            this.Tb_NameO.Size = new System.Drawing.Size(111, 20);
             this.Tb_NameO.TabIndex = 4;
             // 
             // btn_Exit
             // 
             this.btn_Exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_Exit.Location = new System.Drawing.Point(236, 90);
+            this.btn_Exit.Location = new System.Drawing.Point(181, 90);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(135, 23);
+            this.btn_Exit.Size = new System.Drawing.Size(87, 23);
             this.btn_Exit.TabIndex = 5;
             this.btn_Exit.Text = "EXIT";
             this.btn_Exit.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@ namespace JogoDaVelha
             this.AcceptButton = this.btn_PlayGame;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.CancelButton = this.btn_Exit;
-            this.ClientSize = new System.Drawing.Size(383, 125);
+            this.ClientSize = new System.Drawing.Size(278, 125);
             this.ControlBox = false;
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.Tb_NameO);

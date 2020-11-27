@@ -12,7 +12,6 @@ namespace JogoDaVelha
         public static bool IsGameRuning { get; private set; } 
         public static bool Winner { get; private set; }
         public static bool Hash { get; private set; }
-        private static List<Button[]> combinationWin;
 
         //Methods
         private static void GameOver() 
@@ -52,7 +51,7 @@ namespace JogoDaVelha
             if (Winner)
             {
                 GameOver();
-                form.Label_Information.Text = $"PARABENS !! {whowinner} VENCEU A PARTIDA!! {wholoser} TENTE NOVAMENTE!!";
+                form.Label_Information.Text = $"PARABENS !! {whowinner.ToUpper()} VENCEU A PARTIDA!! {wholoser.ToUpper()} TENTE NOVAMENTE!!";
             }
         }
 
