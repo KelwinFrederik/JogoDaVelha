@@ -20,11 +20,15 @@ namespace JogoDaVelha
 
         private void btn_PlayGame_Click(object sender, EventArgs e)
         {
-            Form1 fomr1 = new Form1() {Visible = true};
-            fomr1.LabelNomeX.Text = Tb_NameX.Text;
-            fomr1.LabelNomeO.Text = Tb_NameO.Text;
-            
-            this.SetVisibleCore(false);
+            if (Tb_NameX.Text != "" && Tb_NameO.Text != "")
+            {
+                Form1 fomr1 = new Form1() { Visible = true };
+                fomr1.LabelNomeX.Text = Tb_NameX.Text;
+                fomr1.LabelNomeO.Text = Tb_NameO.Text;
+                this.SetVisibleCore(false);
+            }
+            else
+                MessageBox.Show("Digite um nome para Cada Jogador");
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
