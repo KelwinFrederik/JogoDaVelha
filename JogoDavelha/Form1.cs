@@ -19,7 +19,7 @@ namespace JogoDaVelha
 
             InitializeComponent();
             countCLicks = 0;
-            Regras.NewGame();
+            Regras.NewGame(this);
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace JogoDaVelha
         private void buttonSClick(object sender, EventArgs e)
         {
             if(countCLicks < 9 && Regras.IsGameRuning)
-                countCLicks = Regras.setLetters(sender, countCLicks);
+                countCLicks = Regras.SetLettres(sender, countCLicks);
             
             Regras.WinnerGame(this);
 
