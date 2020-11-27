@@ -34,13 +34,15 @@ namespace JogoDaVelha
             this.label2 = new System.Windows.Forms.Label();
             this.Tb_NameX = new System.Windows.Forms.TextBox();
             this.Tb_NameO = new System.Windows.Forms.TextBox();
+            this.btn_Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_PlayGame
             // 
-            this.btn_PlayGame.Location = new System.Drawing.Point(81, 90);
+            this.btn_PlayGame.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_PlayGame.Location = new System.Drawing.Point(16, 90);
             this.btn_PlayGame.Name = "btn_PlayGame";
-            this.btn_PlayGame.Size = new System.Drawing.Size(198, 23);
+            this.btn_PlayGame.Size = new System.Drawing.Size(135, 23);
             this.btn_PlayGame.TabIndex = 0;
             this.btn_PlayGame.Text = "PLAY GAME";
             this.btn_PlayGame.UseVisualStyleBackColor = true;
@@ -78,11 +80,25 @@ namespace JogoDaVelha
             this.Tb_NameO.Size = new System.Drawing.Size(214, 20);
             this.Tb_NameO.TabIndex = 4;
             // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_Exit.Location = new System.Drawing.Point(236, 90);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(135, 23);
+            this.btn_Exit.TabIndex = 5;
+            this.btn_Exit.Text = "EXIT";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // Form2
             // 
             this.AcceptButton = this.btn_PlayGame;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.CancelButton = this.btn_Exit;
             this.ClientSize = new System.Drawing.Size(383, 125);
+            this.ControlBox = false;
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.Tb_NameO);
             this.Controls.Add(this.Tb_NameX);
             this.Controls.Add(this.label2);
@@ -106,5 +122,6 @@ namespace JogoDaVelha
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox Tb_NameX;
         public System.Windows.Forms.TextBox Tb_NameO;
+        private System.Windows.Forms.Button btn_Exit;
     }
 }
