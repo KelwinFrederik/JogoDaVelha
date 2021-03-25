@@ -35,12 +35,14 @@ namespace JogoDaVelha
             this.Tb_NameX = new System.Windows.Forms.TextBox();
             this.Tb_NameO = new System.Windows.Forms.TextBox();
             this.btn_Exit = new System.Windows.Forms.Button();
+            this.JogX1 = new System.Windows.Forms.CheckBox();
+            this.JogO1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btn_PlayGame
             // 
             this.btn_PlayGame.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_PlayGame.Location = new System.Drawing.Point(16, 90);
+            this.btn_PlayGame.Location = new System.Drawing.Point(13, 82);
             this.btn_PlayGame.Name = "btn_PlayGame";
             this.btn_PlayGame.Size = new System.Drawing.Size(159, 23);
             this.btn_PlayGame.TabIndex = 0;
@@ -51,7 +53,7 @@ namespace JogoDaVelha
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 23);
+            this.label1.Location = new System.Drawing.Point(10, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 13);
             this.label1.TabIndex = 1;
@@ -60,7 +62,7 @@ namespace JogoDaVelha
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 59);
+            this.label2.Location = new System.Drawing.Point(9, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 13);
             this.label2.TabIndex = 2;
@@ -68,14 +70,14 @@ namespace JogoDaVelha
             // 
             // Tb_NameX
             // 
-            this.Tb_NameX.Location = new System.Drawing.Point(157, 20);
+            this.Tb_NameX.Location = new System.Drawing.Point(154, 12);
             this.Tb_NameX.Name = "Tb_NameX";
             this.Tb_NameX.Size = new System.Drawing.Size(111, 20);
             this.Tb_NameX.TabIndex = 3;
             // 
             // Tb_NameO
             // 
-            this.Tb_NameO.Location = new System.Drawing.Point(157, 56);
+            this.Tb_NameO.Location = new System.Drawing.Point(154, 48);
             this.Tb_NameO.Name = "Tb_NameO";
             this.Tb_NameO.Size = new System.Drawing.Size(111, 20);
             this.Tb_NameO.TabIndex = 4;
@@ -83,7 +85,7 @@ namespace JogoDaVelha
             // btn_Exit
             // 
             this.btn_Exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_Exit.Location = new System.Drawing.Point(181, 90);
+            this.btn_Exit.Location = new System.Drawing.Point(178, 82);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(87, 23);
             this.btn_Exit.TabIndex = 5;
@@ -91,13 +93,37 @@ namespace JogoDaVelha
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
+            // JogX1
+            // 
+            this.JogX1.AutoSize = true;
+            this.JogX1.Checked = true;
+            this.JogX1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.JogX1.Location = new System.Drawing.Point(287, 15);
+            this.JogX1.Name = "JogX1";
+            this.JogX1.Size = new System.Drawing.Size(78, 17);
+            this.JogX1.TabIndex = 6;
+            this.JogX1.Text = "X jogará 1°";
+            this.JogX1.UseVisualStyleBackColor = true;
+            // 
+            // JogO1
+            // 
+            this.JogO1.AutoSize = true;
+            this.JogO1.Location = new System.Drawing.Point(287, 51);
+            this.JogO1.Name = "JogO1";
+            this.JogO1.Size = new System.Drawing.Size(79, 17);
+            this.JogO1.TabIndex = 7;
+            this.JogO1.Text = "O jogará 1°";
+            this.JogO1.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AcceptButton = this.btn_PlayGame;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.CancelButton = this.btn_Exit;
-            this.ClientSize = new System.Drawing.Size(278, 125);
+            this.ClientSize = new System.Drawing.Size(380, 117);
             this.ControlBox = false;
+            this.Controls.Add(this.JogO1);
+            this.Controls.Add(this.JogX1);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.Tb_NameO);
             this.Controls.Add(this.Tb_NameX);
@@ -123,5 +149,7 @@ namespace JogoDaVelha
         public System.Windows.Forms.TextBox Tb_NameX;
         public System.Windows.Forms.TextBox Tb_NameO;
         private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.CheckBox JogX1;
+        private System.Windows.Forms.CheckBox JogO1;
     }
 }

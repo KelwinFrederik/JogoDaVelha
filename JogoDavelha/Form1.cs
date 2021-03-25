@@ -16,10 +16,19 @@ namespace JogoDaVelha
 
         public Form1()
         {
-
             InitializeComponent();
-            countCLicks = 1;
+            countCLicks = 1;   
+            On_PageLoad();
             Regras.NewGame(this);
+        }
+        
+
+        private void On_PageLoad()
+        {
+            string information = $"jogador {Form2._Jog01} inicirá o jogo. \nBy.: Kelwin F. Alves";
+            Label_Information.Text = information;
+            LabelNomeO.TextChanged += Regras.SetFirstPlayer;
+            LabelNomeX.TextChanged += Regras.SetFirstPlayer;
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -46,7 +55,7 @@ namespace JogoDaVelha
             
             Regras.WinnerGame(this);
 
-            if(countCLicks > 8 && !Regras.Winner)
+            if(countCLicks > 9 && !Regras.Winner)
                 Regras.HashGame(countCLicks,this);
         }
     }

@@ -191,7 +191,6 @@ namespace JogoDaVelha
             this.Controls.Add(this.LabelNomeX);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
-            this.ShowIcon = false;
             this.GamePanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

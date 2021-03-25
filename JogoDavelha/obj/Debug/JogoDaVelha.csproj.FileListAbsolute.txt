@@ -12,7 +12,6 @@ C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.Form2.
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\bin\Debug\JogoDaVelha.exe.config
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\bin\Debug\JogoDaVelha.exe
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\bin\Debug\JogoDaVelha.pdb
-C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.csprojAssemblyReference.cache
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.Form1.resources
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.Form2.resources
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.Properties.Resources.resources
@@ -20,3 +19,4 @@ C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDa
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.csproj.CoreCompileInputs.cache
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.exe
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.pdb
+C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.csprojAssemblyReference.cache

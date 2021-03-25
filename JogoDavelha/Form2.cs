@@ -13,19 +13,26 @@ namespace JogoDaVelha
 {
     public partial class Form2 : Form
     {
+        public static string _Jog01;
+
         public Form2()
         {
             InitializeComponent();
+
+            JogO1.CheckStateChanged += CheckBoxEventChanged;
+            JogX1.CheckStateChanged += CheckBoxEventChanged;
+
         }
 
         private void btn_PlayGame_Click(object sender, EventArgs e)
         {
-            if (Tb_NameX.Text != "" && Tb_NameO.Text != "")
+            if (!string.IsNullOrEmpty(Tb_NameX.Text) && !string.IsNullOrEmpty(Tb_NameO.Text))
             {
+                _Jog01 = JogO1.Checked ? Tb_NameO.Text : Tb_NameX.Text;
+                this.SetVisibleCore(false);
                 Form1 fomr1 = new Form1() { Visible = true };
                 fomr1.LabelNomeX.Text = Tb_NameX.Text;
                 fomr1.LabelNomeO.Text = Tb_NameO.Text;
-                this.SetVisibleCore(false);
             }
             else
                 MessageBox.Show("Digite um nome para Cada Jogador");
@@ -34,6 +41,26 @@ namespace JogoDaVelha
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        public void CheckBoxEventChanged(object obj, EventArgs e)
+        {
+            CheckBox checkBox = (CheckBox)obj;
+            
+            if (checkBox.Name == JogO1.Name)
+            {
+                if (checkBox.CheckState == CheckState.Checked)
+                    JogX1.CheckState = CheckState.Unchecked;
+                if (checkBox.CheckState == CheckState.Unchecked)
+                    JogX1.CheckState = CheckState.Checked;
+            }
+            else if(checkBox.Name == JogX1.Name)
+            {
+                if (checkBox.CheckState == CheckState.Checked)
+                    JogO1.CheckState = CheckState.Unchecked;
+                if (checkBox.CheckState == CheckState.Unchecked)
+                    JogO1.CheckState = CheckState.Checked;
+            }
         }
     }
 }

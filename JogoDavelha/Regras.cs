@@ -12,6 +12,10 @@ namespace JogoDaVelha
         public static bool IsGameRuning { get; private set; } 
         public static bool Winner { get; private set; }
         public static bool Hash { get; private set; }
+        public static string Player1 { get; private set; }
+        public static string Player2 { get; private set; }
+
+        private static Form1 form1;
 
         //Methods
         private static void GameOver() 
@@ -25,6 +29,8 @@ namespace JogoDaVelha
             Hash = false;
             Winner = false;
             IsGameRuning = true;
+
+            form1 = form;
         }
 
         public static void WinnerGame(Form1 form)
@@ -51,7 +57,7 @@ namespace JogoDaVelha
             if (Winner)
             {
                 GameOver();
-                form.Label_Information.Text = $"PARABENS !! {whowinner.ToUpper()} VENCEU A PARTIDA!! {wholoser.ToUpper()} TENTE NOVAMENTE!!";
+                form.Label_Information.Text = $"PARABENS !! {whowinner.ToUpper()} VENCEU A PARTIDA!!\n {wholoser.ToUpper()} TENTE NOVAMENTE!!";
             }
         }
 
@@ -68,19 +74,17 @@ namespace JogoDaVelha
 
         public static int SetLettres(object sender, int count)
         {
-            Button b = (Button)sender;
+            Button button_Letter = (Button)sender;
 
-            if (b.Text == "")
+            if (button_Letter.Text == "")
+            {
                 if (count % 2 == 0)
-                {
-                    b.Text = "0";
-                    count++;
-                }
+                    button_Letter.Text = Player2;
                 else
-                {
-                    b.Text = "X";
-                    count++;
-                }
+                    button_Letter.Text = Player1;
+
+                count++;
+            }
             return count;
         }
 
@@ -117,6 +121,20 @@ namespace JogoDaVelha
             }
 
             return winner;
+        }
+
+        public static void SetFirstPlayer(object obj, EventArgs e) 
+        {
+            if (Form2._Jog01.Equals(form1.LabelNomeO.Text))
+            {
+                Player1 = "0";
+                Player2 = "X";
+            }
+            else if (Form2._Jog01.Equals(form1.LabelNomeX.Text))
+            {
+                Player1 = "X";
+                Player2 = "O";
+            }
         }
     }
 }
