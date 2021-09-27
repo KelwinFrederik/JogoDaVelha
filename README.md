@@ -9,14 +9,17 @@
 </p>
 
 <h4 align="center"> 
-	🚧  <img src="https://img.shields.io/static/v1?label=Game&style=for-the-badge&logo=ghost"/> 🚧
+	🚧  <img src="https://img.shields.io/static/v1?label=status&message=Concluded&color=7159c1&style=for-the-badge&logo=ghost"/> 🚧
 </h4>
 
 <div id="objetivo">
+	<h5> Objetivo | Objective </h5>
 </div>
 
 <div id="tecnologias">
+	<h5> Tecnologias | Technologies </h5>
 </div>
 
 <div id="autor">
+	<h5> Autor | Author </h5>
 </div>
