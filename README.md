@@ -12,6 +12,8 @@
 
 <h4 align="center"> 
  <img src="https://img.shields.io/static/v1?label=status&message=Concluded&color=7159c1&style=for-the-badge&logo=ghost"/>
+ <hr>
+	<a href="https://mega.nz/folder/IzIh2BhB#Vyp14JEJTUJUBjNyGwnkyg" target="_blank"> Download V1 </a>
 </h4>
 
 <div id="tecnologias">
