@@ -19,16 +19,17 @@ namespace JogoDaVelha
             InitializeComponent();
             countCLicks = 1;   
             On_PageLoad();
-            Regras.NewGame(this);
         }
         
 
         private void On_PageLoad()
         {
-            string information = $"jogador {Form2._Jog01} inicirá o jogo. \nBy.: Kelwin F. Alves";
-            Label_Information.Text = information;
-            LabelNomeO.TextChanged += Regras.SetFirstPlayer;
-            LabelNomeX.TextChanged += Regras.SetFirstPlayer;
+            DefineOrdemJogadores();
+            
+            Regras.NewGame(this);
+            Regras.SetFirstPlayer();
+
+            Label_Information.Text = $"jogador {PrimeiroJogador.Text} inicirá o jogo. \nBy.: Kelwin F. Alves";
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -41,14 +42,14 @@ namespace JogoDaVelha
         {
             Form2 form2 = new Form2();
 
-            form2.Tb_NameX.Text = LabelNomeX.Text;
-            form2.Tb_NameO.Text = LabelNomeO.Text;
+            form2.Tb_NameX.Text = Form2._JogadorX;
+            form2.Tb_NameO.Text = Form2._JogadorO;
 
             form2.ShowDialog();
             this.Close();
         }
 
-        private void buttonSClick(object sender, EventArgs e)
+        private void buttonsClick(object sender, EventArgs e)
         {
             if(countCLicks <= 9 && Regras.IsGameRuning)
                 countCLicks = Regras.SetLettres(sender, countCLicks);
@@ -57,6 +58,23 @@ namespace JogoDaVelha
 
             if(countCLicks > 9 && !Regras.Winner)
                 Regras.HashGame(countCLicks,this);
+        }
+
+        private void DefineOrdemJogadores()
+        {
+            PrimeiroJogador.Text = Form2._JogadorX;
+            SegundoJogador.Text = Form2._JogadorO;
+
+            if (!Form2._PrimeiroX)
+            {
+                PrimeiroJogador.Text = Form2._JogadorO;
+                SegundoJogador.Text = Form2._JogadorX;
+
+                string TrocaAuxiliar = SimbolLabelPlayer1.Text;
+
+                SimbolLabelPlayer1.Text = SimbolLabelPlayer2.Text;
+                SimbolLabelPlayer2.Text = TrocaAuxiliar;
+            }
         }
     }
 }

@@ -39,15 +39,16 @@ namespace JogoDaVelha
 
             if (WinnerButtons(form, out whowinner)) 
             {
-                if (whowinner.ToUpper() == "X")
+
+                if (whowinner.Contains(form.SimbolLabelPlayer2.Text))
                 {
-                    wholoser = form.LabelNomeO.Text;
-                    whowinner = form.LabelNomeX.Text;
+                    wholoser = form.PrimeiroJogador.Text;
+                    whowinner = form.SegundoJogador.Text;
                 }
                 else
                 {
-                    wholoser = form.LabelNomeX.Text;
-                    whowinner = form.LabelNomeO.Text;
+                    wholoser = form.SegundoJogador.Text;
+                    whowinner = form.PrimeiroJogador.Text;
                 }
 
                 Winner = true;
@@ -123,18 +124,10 @@ namespace JogoDaVelha
             return winner;
         }
 
-        public static void SetFirstPlayer(object obj, EventArgs e) 
+        public static void SetFirstPlayer() 
         {
-            if (Form2._Jog01.Equals(form1.LabelNomeO.Text))
-            {
-                Player1 = "0";
-                Player2 = "X";
-            }
-            else if (Form2._Jog01.Equals(form1.LabelNomeX.Text))
-            {
-                Player1 = "X";
-                Player2 = "O";
-            }
+            Player1 = Form2._PrimeiroX ? "X" : "O";
+            Player2 = Form2._PrimeiroX ? "O" : "X";
         }
     }
 }

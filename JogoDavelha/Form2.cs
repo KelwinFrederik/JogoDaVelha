@@ -13,7 +13,9 @@ namespace JogoDaVelha
 {
     public partial class Form2 : Form
     {
-        public static string _Jog01;
+        public static string _JogadorX;
+        public static string _JogadorO;
+        public static bool _PrimeiroX = true;
 
         public Form2()
         {
@@ -28,11 +30,13 @@ namespace JogoDaVelha
         {
             if (!string.IsNullOrEmpty(Tb_NameX.Text) && !string.IsNullOrEmpty(Tb_NameO.Text))
             {
-                _Jog01 = JogO1.Checked ? Tb_NameO.Text : Tb_NameX.Text;
-                this.SetVisibleCore(false);
-                Form1 fomr1 = new Form1() { Visible = true };
-                fomr1.LabelNomeX.Text = Tb_NameX.Text;
-                fomr1.LabelNomeO.Text = Tb_NameO.Text;
+                _JogadorX = Tb_NameX.Text;
+                _JogadorO = Tb_NameO.Text;
+                _PrimeiroX = JogX1.Checked;
+
+                Form1 form1 = new Form1();               
+                this.Hide();
+                form1.ShowDialog();
             }
             else
                 MessageBox.Show("Digite um nome para Cada Jogador");

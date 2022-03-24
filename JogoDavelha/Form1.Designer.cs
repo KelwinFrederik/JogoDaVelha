@@ -30,10 +30,10 @@ namespace JogoDaVelha
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.LabelNomeX = new System.Windows.Forms.Label();
-            this.LabelNomeO = new System.Windows.Forms.Label();
-            this.LabelX = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PrimeiroJogador = new System.Windows.Forms.Label();
+            this.SegundoJogador = new System.Windows.Forms.Label();
+            this.SimbolLabelPlayer1 = new System.Windows.Forms.Label();
+            this.SimbolLabelPlayer2 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.GamePanel = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
@@ -53,23 +53,23 @@ namespace JogoDaVelha
             // 
             // LabelNomeX
             // 
-            resources.ApplyResources(this.LabelNomeX, "LabelNomeX");
-            this.LabelNomeX.Name = "LabelNomeX";
+            resources.ApplyResources(this.PrimeiroJogador, "LabelNomeX");
+            this.PrimeiroJogador.Name = "LabelNomeX";
             // 
             // LabelNomeO
             // 
-            resources.ApplyResources(this.LabelNomeO, "LabelNomeO");
-            this.LabelNomeO.Name = "LabelNomeO";
+            resources.ApplyResources(this.SegundoJogador, "LabelNomeO");
+            this.SegundoJogador.Name = "LabelNomeO";
             // 
-            // LabelX
+            // SimbolLabelPlayer1
             // 
-            resources.ApplyResources(this.LabelX, "LabelX");
-            this.LabelX.Name = "LabelX";
+            resources.ApplyResources(this.SimbolLabelPlayer1, "SimbolLabelPlayer1");
+            this.SimbolLabelPlayer1.Name = "SimbolLabelPlayer1";
             // 
-            // label1
+            // SimbolLabelPlayer2
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.SimbolLabelPlayer2, "SimbolLabelPlayer2");
+            this.SimbolLabelPlayer2.Name = "SimbolLabelPlayer2";
             // 
             // label2
             // 
@@ -96,63 +96,63 @@ namespace JogoDaVelha
             resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.buttonSClick);
+            this.button7.Click += new System.EventHandler(this.buttonsClick);
             // 
             // button8
             // 
             resources.ApplyResources(this.button8, "button8");
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.buttonSClick);
+            this.button8.Click += new System.EventHandler(this.buttonsClick);
             // 
             // button9
             // 
             resources.ApplyResources(this.button9, "button9");
             this.button9.Name = "button9";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.buttonSClick);
+            this.button9.Click += new System.EventHandler(this.buttonsClick);
             // 
             // button4
             // 
             resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.buttonSClick);
+            this.button4.Click += new System.EventHandler(this.buttonsClick);
             // 
             // button5
             // 
             resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.buttonSClick);
+            this.button5.Click += new System.EventHandler(this.buttonsClick);
             // 
             // button6
             // 
             resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.buttonSClick);
+            this.button6.Click += new System.EventHandler(this.buttonsClick);
             // 
             // button3
             // 
             resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.buttonSClick);
+            this.button3.Click += new System.EventHandler(this.buttonsClick);
             // 
             // button2
             // 
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.buttonSClick);
+            this.button2.Click += new System.EventHandler(this.buttonsClick);
             // 
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonSClick);
+            this.button1.Click += new System.EventHandler(this.buttonsClick);
             // 
             // btn_PlayAgain
             // 
@@ -185,10 +185,10 @@ namespace JogoDaVelha
             this.Controls.Add(this.btn_PlayAgain);
             this.Controls.Add(this.GamePanel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.LabelX);
-            this.Controls.Add(this.LabelNomeO);
-            this.Controls.Add(this.LabelNomeX);
+            this.Controls.Add(this.SimbolLabelPlayer2);
+            this.Controls.Add(this.SimbolLabelPlayer1);
+            this.Controls.Add(this.SegundoJogador);
+            this.Controls.Add(this.PrimeiroJogador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.GamePanel.ResumeLayout(false);
@@ -198,14 +198,12 @@ namespace JogoDaVelha
         }
 
         #endregion
-        private System.Windows.Forms.Label LabelX;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel GamePanel;
         private System.Windows.Forms.Button btn_PlayAgain;
         private System.Windows.Forms.Button btn_Exit;
-        public System.Windows.Forms.Label LabelNomeX;
-        public System.Windows.Forms.Label LabelNomeO;
+        public System.Windows.Forms.Label PrimeiroJogador;
+        public System.Windows.Forms.Label SegundoJogador;
         public System.Windows.Forms.Label Label_Information;
         public System.Windows.Forms.Button button7;
         public System.Windows.Forms.Button button8;
@@ -216,6 +214,8 @@ namespace JogoDaVelha
         public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label SimbolLabelPlayer1;
+        public System.Windows.Forms.Label SimbolLabelPlayer2;
     }
 }
 

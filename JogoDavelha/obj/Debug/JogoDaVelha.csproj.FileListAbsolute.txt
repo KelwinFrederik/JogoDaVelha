@@ -20,3 +20,14 @@ C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDa
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.exe
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.pdb
 C:\Users\BRIDE\source\repos\JogoDaVelha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.csprojAssemblyReference.cache
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\bin\Debug\JogoDaVelha.exe.config
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\bin\Debug\JogoDaVelha.exe
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\bin\Debug\JogoDaVelha.pdb
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.csproj.AssemblyReference.cache
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.Form1.resources
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.Form2.resources
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.Properties.Resources.resources
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.csproj.GenerateResource.cache
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.csproj.CoreCompileInputs.cache
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.exe
+C:\SyncMega\Jogo_da_Velha\JogoDaVelha\JogoDaVelha\obj\Debug\JogoDaVelha.pdb
